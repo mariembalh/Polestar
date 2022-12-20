@@ -8,11 +8,10 @@ using namespace std;
 
 string opening="({<[";
 string closing =")}>]";
-static std::map<char, int> scores  = {
-                                           {')',3 },
-                                           {']', 57},
-                                           {'}', 1197},
-                                           {'>', 25137}};
+static std::map<char, int> scores  = { {')',3 },
+                                       {']', 57},
+                                       {'}', 1197},
+                                       {'>', 25137}};
 vector<char> cumul;
 vector<int> pos;
 char eventofcode(string line)
